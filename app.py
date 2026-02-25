@@ -1,3 +1,4 @@
+import streamlit as st
 # Page title
 st.set_page_config(page_title="Skillspotter Chat", page_icon="💬")
 st.title("Skillspotter 💬")
@@ -51,4 +52,6 @@ if user_message:
 
     # Display bot response
     with st.chat_message("assistant"):
+
         st.write(bot_reply)
+        Fix missing Streamlit import
